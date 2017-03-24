@@ -1,17 +1,3 @@
-// Copyright 2013 Clark DuVall
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 (function() {
    if (typeof Object.create !== 'function') {
       Object.create = function (o) {
@@ -494,16 +480,13 @@
    var term = Object.create(Terminal);
    term.init(CONFIG, '/json/sample.json', COMMANDS, function() {
       term.enqueue('login')
-          .enqueue('clark')
+          .enqueue('guest')
           .enqueue('******')
           .enqueue('cat file1')
           .enqueue('help')
-          .enqueue('ls -l')
-          .enqueue('cd dir1/foo')
-          .enqueue('ls')
-          .enqueue('cd ../..')
-          .enqueue('ls dir1/foo')
           .enqueue('tree')
+          .enqueue('cat about/pic.jpg')
+          .enqueue('help')
           .begin();
    });
 
