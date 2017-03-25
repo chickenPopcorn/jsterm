@@ -483,9 +483,8 @@
           .enqueue('guest')
           .enqueue('******')
           .enqueue('cat file1')
-          .enqueue('help')
           .enqueue('tree')
-          .enqueue('cat about/pic.jpg')
+          .enqueue('cat pic.jpg')
           .enqueue('help')
           .begin();
    });

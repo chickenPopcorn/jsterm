@@ -1,41 +1,76 @@
 {
-   "name": "~",
-   "type": "dir",
-   "contents": [
-      {
-         "name": "file1",
-         "type": "text",
-         "contents": "Hello World!",
-         "description": "FOOO"
-      },
-      {
-         "name": "pic.jpg",
-         "type": "img",
-         "contents": "/images/penguin.png",
-         "caption": "What a beautiful penguin."
-      },
-      {
-         "name": "dir1",
-         "type": "dir",
-         "contents": [
-            {
-               "name": "file2",
-               "type": "text",
-               "contents": "foo"
-            },
-            {
-               "name": "foo",
-               "type": "dir",
-               "contents": [
-                  {
-                     "name": "file3",
-                     "type": "exec",
-                     "contents": "http://google.com",
-                     "description": "blahblah"
-                  }
-               ]
-            }
-         ]
-      }
-   ]
+  "name": "~",
+  "type": "dir",
+  "contents": [
+    {
+      "name": "links",
+      "type": "dir",
+      "contents": [
+        {
+          "name": "GitHub",
+          "type": "exec",
+          "contents": "https://github.com/chickenPopcorn"
+        },
+        {
+          "name": "LinkedIn",
+          "type": "exec",
+          "contents": "https://www.linkedin.com/in/jimmy-ruicong-xie-8b307929/"
+        },
+        {
+          "name": "resume",
+          "type": "exec",
+          "contents": "http://ruicongxie.com/owncloud/index.php/s/4EMybSNJMPmeOux"
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "type": "dir",
+      "contents": [
+        {
+          "name": "SYNC",
+          "type": "exec",
+          "contents": "https://github.com/chickenPopcorn/not-so-tiny-url"
+        },
+        {
+          "name": "food-truck-inc",
+          "type": "exec",
+          "contents": "https://github.com/chickenPopcorn/food-truck-inc"
+        },
+        {
+          "name": "EqEq",
+          "type": "exec",
+          "contents": "https://github.com/chickenPopcorn/EqEq"
+        }
+      ]
+    },
+    {
+      "name": "pic.jpg",
+      "type": "img",
+      "contents": "/images/headshot.jpg",
+      "caption": "This is Jimmy Xie."
+    },
+    {
+      "name": "about",
+      "type": "dir",
+      "contents": [
+        {
+          "name": "info",
+          "type": "text",
+          "contents": "Columbia MS CS student aspiring to be a great software engineer"
+        },
+        {
+          "name": "contact",
+          "type": "text",
+          "contents": "Email: rx2119@columbia.edu /n Cell: 608-628-9774"
+        },
+        {
+          "name": "pic.jpg",
+          "type": "img",
+          "contents": "/images/headshot.jpg",
+          "caption": "Hi, this is me!"
+        }
+      ]
+    }
+  ]
 }
