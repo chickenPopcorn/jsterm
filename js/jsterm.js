@@ -482,9 +482,8 @@
       term.enqueue('login')
           .enqueue('guest')
           .enqueue('******')
-          .enqueue('cat file1')
+     	  .enqueue('gimp pic.jpg')
           .enqueue('tree')
-          .enqueue('cat pic.jpg')
           .enqueue('help')
           .begin();
    });
